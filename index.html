@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Nexus | Sentient Event Ecosystem</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@200;400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="cursor-glow"></div>
+    <nav class="navbar glass">
+      <div class="logo">NEXUS</div>
+      <div class="nav-links">
+        <a href="/blueprint.html" class="cyan-text">Blueprint</a>
+        <a href="#vision">Vision</a>
+        <a href="#system">Omni-Core</a>
+        <a href="#demo">Live Grid</a>
+      </div>
+    </nav>
+
+    <header class="hero-section">
+      <div class="hero-bg">
+        <img src="/hero.png" alt="Nexus Stadium Hologram" />
+      </div>
+      <div class="hero-content">
+        <h1 class="reveal-text">THE SENTIENT<br/>ECOSYSTEM</h1>
+        <p class="subtitle fade-in">Zero lag, pure vibe. We hacked reality to delete the waiting lines and dialed the energy up to 11. Welcome to the living pulse.</p>
+        <button class="primary-btn glow-btn">Initialize Connection</button>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <p>DESCEND</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="vision" class="features-section">
+        <div class="section-header">
+          <h2 class="neon-text">Holographic Synchronicity</h2>
+          <p>Traditional venues are dead. We force infrastructure to adapt to human behavior in real-time.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card glass tilt">
+            <div class="card-img-wrapper">
+              <img src="/feature1.png" alt="AR Wayfinding" />
+              <div class="overlay-glow cyan"></div>
+            </div>
+            <div class="card-content">
+              <h3>The Golden Thread</h3>
+              <p>Predictive spatial networking mapping dynamic vector routing algorithms directly to your AR view. Zero bottlenecking. 100% flow state.</p>
+            </div>
+          </div>
+
+          <div class="feature-card glass tilt">
+            <div class="card-img-wrapper">
+              <img src="/feature2.png" alt="Zero-friction Concessions" />
+              <div class="overlay-glow magenta"></div>
+            </div>
+            <div class="card-content">
+              <h3>Swarm Fulfillment</h3>
+              <p>Why wait? The Bio-Spatial Grid anticipates caloric needs and dispatches silent delivery drones seamlessly directly to your moving coordinate.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="dashboard-section">
+         <div class="dashboard-container glass">
+           <div class="dash-header">
+             <h3>Omni-Core Command</h3>
+             <div class="status-indicator"><span class="pulse"></span> LIVE SYNC</div>
+           </div>
+           
+           <div class="dash-grid">
+             <div class="dash-stat">
+               <span class="label">Total Live Nodes</span>
+               <span class="value" id="stat-nodes">104,281</span>
+             </div>
+             <div class="dash-stat">
+               <span class="label">Crowd Velocity</span>
+               <span class="value cyan-text" id="stat-velocity">1.24 m/s</span>
+             </div>
+             <div class="dash-stat">
+               <span class="label">Wait Time (Avg)</span>
+               <span class="value" id="stat-wait">1.2 min</span>
+             </div>
+             <div class="dash-stat">
+               <span class="label">Active Bottlenecks</span>
+               <span class="value magenta-text" id="stat-bottlenecks">0</span>
+             </div>
+           </div>
+
+           <div class="data-viz-mocker">
+             <div class="stream-lines">
+               <!-- JS populated flowing lines representing data -->
+             </div>
+           </div>
+         </div>
+      </section>
+
+      <!-- NEW: Attendee Operations Hub -->
+      <section id="hub" class="hub-section">
+        <div class="section-header">
+          <h2 class="neon-text">Operations & Hub</h2>
+          <p>Mandatory logistics, dynamic routing, and emergency protocols encoded for immediate access.</p>
+        </div>
+
+        <div class="hub-grid">
+          
+          <!-- 1. Location & Interactive Map -->
+          <div class="hub-card glass map-card">
+            <div class="card-header">
+              <h3><span class="icon pulse-green"></span> Live Blueprint</h3>
+              <span class="location">The Nexus Dome, San Jose, CA</span>
+            </div>
+            <div class="map-container" id="nexus-map">
+                <div class="map-overlay">
+                    <div class="zone" style="top: 20%; left: 30%;">Z-Alpha</div>
+                    <div class="zone medical" style="top: 60%; left: 10%;">Medical A</div>
+                    <div class="zone exit" style="top: 80%; left: 80%;">EXIT E-1 (Active)</div>
+                    <div class="zone exit" style="top: 10%; left: 90%;">EXIT N-2 (Active)</div>
+                </div>
+            </div>
+            <div class="map-controls">
+                <button class="map-toggle active" data-layer="all">All Layers</button>
+                <button class="map-toggle" data-layer="medical">Med Tents</button>
+                <button class="map-toggle" data-layer="exit">Evac Routes</button>
+            </div>
+          </div>
+
+          <!-- 2. Dynamic Agenda -->
+          <div class="hub-card glass agenda-card">
+             <div class="card-header"><h3>Event Cadence</h3></div>
+             <table class="agenda-table">
+               <tr><th>Time</th><th>Event Phase</th><th>Zone</th></tr>
+               <tr><td>09:00</td><td>Ingress & Bio-Sync</td><td>Global</td></tr>
+               <tr><td>10:30</td><td>Opening Hologram Keynote</td><td>Main Atrium</td></tr>
+               <tr><td>13:00</td><td>Swarm Logic Demo</td><td>Zone Beta</td></tr>
+               <tr><td>18:45</td><td>Volumetric Spectacle</td><td>Omni-Stage</td></tr>
+             </table>
+          </div>
+
+          <!-- 3. Emergency & SOS -->
+          <div class="hub-card glass emergency-card">
+             <div class="card-header"><h3 class="magenta-text">Emergency Matrix</h3></div>
+             <ul class="sos-list">
+                <li><strong>Local Services:</strong> 911</li>
+                <li><strong>Nexus On-Site Med Response:</strong> 555-0199</li>
+                <li><strong>Security Operations:</strong> 555-0811</li>
+             </ul>
+             <div class="sos-action">
+                <p>If Golden Thread AR routing fails during evacuation, adhere to green physical floor-vectors.</p>
+                <button class="primary-btn pulse-red-btn">Trigger Local SOS</button>
+             </div>
+          </div>
+
+          <!-- 4. Mandatory Compliance -->
+          <div class="hub-card glass compliance-card">
+             <div class="card-header"><h3>Compliance Parameters</h3></div>
+             <div class="compliance-content">
+               <p><strong>Code of Conduct:</strong> Uninterrupted flow-state is paramount. Any localized physical disruptions will result in automatic UWB ticket revocation.</p>
+               <p><strong>Prohibited Items:</strong></p>
+               <ul class="prohibited-list">
+                 <li>Legacy optical recording equipment / Drones</li>
+                 <li>Weapons, explosives, chemical agents</li>
+                 <li>Opaque bags larger than 4x6"</li>
+                 <li>Outside hydration (System handles all caloric fulfillment)</li>
+               </ul>
+             </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>ENGINEERED BY ANTIGRAVITY | INITIATIVE 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Event Blueprint</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+  </head>
+  <body>
+    <div class="cursor-glow"></div>
+    <nav class="navbar glass">
+      <div class="logo"><a href="/" style="color:inherit; text-decoration:none;">NEXUS</a></div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/blueprint.html" class="cyan-text">Blueprint</a>
+      </div>
+    </nav>
+
+    <main style="padding: 10rem 4rem 4rem; max-width: 1000px; margin: 0 auto; min-height: 100vh;">
+      <h1 class="neon-text" style="font-size: 3rem; margin-bottom: 2rem;">The Sentient Event Ecosystem</h1>
+      
+      <div class="hub-card glass" style="margin-bottom: 3rem;">
+        <h2 class="cyan-text" style="margin-bottom: 1rem;">Executive Summary</h2>
+        <p style="color: var(--text-muted); line-height: 1.8;">Inspired by the frontier-pushing innovation of Google I/O, Project Nexus transcends the concept of a physical venue. It is a living, breathing digital twin—a unified ecosystem where humanity meets hyper-intelligence. It dissolves friction through predictive architecture, choreographs 100,000 attendees as a liquid neural network, and turns every second into a breathtaking cinematic experience.</p>
+      </div>
+
+      <div class="hub-card glass" style="margin-bottom: 3rem;">
+        <h2 class="cyan-text" style="margin-bottom: 1rem;">Core Philosophy</h2>
+        <p style="color: var(--text-muted); line-height: 1.8;">Traditional venues force humans to adapt to static infrastructure. <strong style="color: white;">Project Nexus forces infrastructure to adapt to human behavior in real-time.</strong> By combining spatial computing, deep reinforcement learning, and swarm robotics, we eliminate the three friction points of human gatherings: <strong>Waiting, Wayfinding, and Disconnection.</strong></p>
+        <div class="objective-box" style="margin-top: 2rem;">
+           <p><strong style="color: white;">The Magic Rule:</strong> If an attendee has to pause to figure out where to go or wait for a service, the system has failed. The venue must anticipate, never react.</p>
+        </div>
+      </div>
+
+      <div class="hub-card glass" style="margin-bottom: 3rem;">
+        <h2 class="cyan-text" style="margin-bottom: 1rem;">The Technological Architecture</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">The backbone of Nexus is a tiered hierarchy of ambient computing processing millions of signals per nanosecond.</p>
+        <div class="mermaid" style="background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 10px; border: 1px solid var(--glass-border);">
+          graph TD
+            A["Omni-Core AI (Macro-Strategist)"]
+            B["Bio-Spatial Grid (Digital Twin)"]
+            C["Crowd Velocity Router (Load Balancing)"]
+            D["AR Lightweave App (Micro-Guidance)"]
+            E["Volumetric SkyNet (Macro-Spectacle)"]
+            F["Drone Swarm AI (Micro-Fulfillment)"]
+            G["Smart Terrain Panels (Adaptive Architecture)"]
+            A -->|"Synthesizes 10M+ inputs/sec"| B
+            B -->|"Forecasts shifts"| C
+            C -->|"Dispatches dynamic routing"| D
+            C -->|"Redirects atmospheric geometry"| G
+            A -->|"Triggers synesthetic moments"| E
+            B -->|"Predicts caloric needs"| F
+        </div>
+      </div>
+
+      <div class="hub-card glass" style="margin-bottom: 3rem;">
+        <h2 class="cyan-text" style="margin-bottom: 1rem;">The Cinematic Attendee Journey</h2>
+        <ul style="color: var(--text-muted); line-height: 2; padding-left: 1.5rem;">
+            <li><strong style="color: white;">Phase 1: Arrival & The Golden Thread.</strong> Biometric hashes instantly validate entry without a halted step. Golden Thread AR ensures no intersecting paths.</li>
+            <li><strong style="color: white;">Phase 2: Frictionless Fulfillment.</strong> Predictive concessions anticipate caloric needs and dispatch silent drone swarms directly to moving coordinates.</li>
+            <li><strong style="color: white;">Phase 3: Hyperspace Spectacle.</strong> Volumetric SkyNet transforms the environment into a hyper-realistic digital narrative reacting to the collective heartbeat.</li>
+        </ul>
+      </div>
+
+      <div class="hub-card glass" style="margin-bottom: 3rem;">
+        <h2 class="cyan-text" style="margin-bottom: 1rem;">Paradigm Shift</h2>
+        <table class="agenda-table" style="color: var(--text-main); margin-top: 1.5rem;">
+            <tr><th>Vector</th><th>Legacy Model</th><th>Project Nexus</th></tr>
+            <tr><td>Ingress</td><td>Scanners, queues</td><td>Continuous walking, biometrics</td></tr>
+            <tr><td>Wayfinding</td><td>Static signs, getting lost</td><td>Dynamic AR paths</td></tr>
+            <tr><td>Concessions</td><td>Miss event, 20+ min lines</td><td>Predictive ordering, swarms</td></tr>
+            <tr><td>Environment</td><td>Concrete, static screens</td><td>Adaptive terrain, holograms</td></tr>
+        </table>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>ENGINEERED BY ANTIGRAVITY | INITIATIVE 2026</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
