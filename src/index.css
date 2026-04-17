@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --tron-bg: #030613;
+  --tron-cyan: #00f3ff;
+  --tron-cyan-glow: rgba(0, 243, 255, 0.5);
+  --tron-cyan-dim: rgba(0, 243, 255, 0.1);
+  --tron-blue: #0066ff;
+  --tron-alert: #ff4d00;
+  --tron-bg-panel: rgba(5, 9, 20, 0.7);
+  
+  --font-main: 'Outfit', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  
+  --glass-border: 1px solid rgba(0, 243, 255, 0.2);
+  --glass-shadow: 0 0 20px rgba(0, 243, 255, 0.05), inset 0 0 20px rgba(0, 243, 255, 0.02);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--tron-bg);
+  background-image: 
+    linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Panel Utility */
+.glass-panel {
+  background: var(--tron-bg-panel);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Panel glow edge */
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tron-cyan), transparent);
+  opacity: 0.5;
+}
+
+/* Typography Utilities */
+.text-cyan { color: var(--tron-cyan); }
+.text-mono { font-family: var(--font-mono); }
+.glow-text {
+  text-shadow: 0 0 10px var(--tron-cyan-glow);
+}
+
+/* Layout Utilities */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Vignette Overlay for Cinematic Feel */
+.main-content::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--tron-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tron-cyan-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tron-cyan);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 5px var(--tron-cyan-glow); }
+  50% { text-shadow: 0 0 20px var(--tron-cyan), 0 0 30px var(--tron-cyan); }
+  100% { text-shadow: 0 0 5px var(--tron-cyan-glow); }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Global Scanline Effect */
+.scanlines {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.3;
+}

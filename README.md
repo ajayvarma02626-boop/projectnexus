@@ -1,5 +1,16 @@
-# projectnexus
- Project Nexus: The Sentient Event Ecosystem
-<img width="1024" height="1024" alt="hero" src="https://github.com/user-attachments/assets/5dbb8c1e-d84f-497f-a61c-a87580483524" />
-Project Nexus: The Sentient Event Ecosystem
-Inspired by the frontier-pushing innovation  Project Nexus transcends the concept of a physical venue. It is a living, breathing digital twin—a unified ecosystem where humanity meets hyper-intelligence. It dissolves friction through predictive architecture, choreographs 100,000 attendees as a liquid neural network, and turns every second into a breathtaking cinematic experience.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
